@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}Contacto - Plaza Comercial Quetzal{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center">Contáctanos</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="phone" name="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Asunto</label>
+                            <select class="form-select" id="subject" name="subject" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="informacion">Información general</option>
+                                <option value="renta">Renta de espacios</option>
+                                <option value="eventos">Eventos y talleres</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-info">
+                    <h3>Información de contacto</h3>
+                    <p><strong>Dirección:</strong><br>
+                    Plaza Comercial Quetzal<br>
+                    Teotihuacán de Arista, Estado de México</p>
+                    
+                    <p><strong>Teléfono:</strong><br>
+                    +52 55 1234 5678</p>
+                    
+                    <p><strong>Correo electrónico:</strong><br>
+                    info@plazaquetzal.com</p>
+                    
+                    <p><strong>Horarios de atención:</strong><br>
+                    Lunes a Domingo: 8:00 AM - 10:00 PM</p>
+                    
+                    <div class="mt-4">
+                        <h4>Síguenos en redes sociales</h4>
+                        <div class="social-icons">
+                            <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <h3 class="text-center mb-4">¿Cómo llegar?</h3>
+        <div class="map-container">
+            <!-- Aquí iría el código del mapa de Google Maps -->
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.1234567890123!2d-98.12345678901234!3d19.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA3JzI0LjQiTiA5OMKwMDcnMjQuNCJX!5e0!3m2!1ses!2smx!4v1234567890123!5m2!1ses!2smx" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+{% endblock %} 

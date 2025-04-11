@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+
+{% block title %}Coworking - Plaza Comercial Quetzal{% endblock %}
+
+{% block content %}
+<section class="hero-section" style="background-image: url('{{ url_for('static', filename='images/coworking-hero.jpg') }}');">
+    <div class="container">
+        <h1 class="display-4">Espacios de Coworking</h1>
+        <p class="lead">Trabaja en un entorno inspirador rodeado de cultura y tradición</p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="section-title">Nuestros Espacios</h2>
+                <p>Nuestros espacios de coworking están diseñados para ofrecer la máxima comodidad y productividad, combinando la modernidad con elementos de la cultura local.</p>
+                <div class="features-list">
+                    <div class="feature-item mb-4">
+                        <i class="fas fa-wifi fa-2x text-primary me-3"></i>
+                        <div>
+                            <h5>Internet de Alta Velocidad</h5>
+                            <p>Conexión estable y rápida para todas tus necesidades de trabajo.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item mb-4">
+                        <i class="fas fa-coffee fa-2x text-primary me-3"></i>
+                        <div>
+                            <h5>Áreas de Descanso</h5>
+                            <p>Espacios cómodos para relajarte y recargar energías.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item mb-4">
+                        <i class="fas fa-users fa-2x text-primary me-3"></i>
+                        <div>
+                            <h5>Networking</h5>
+                            <p>Oportunidades para conectar con otros profesionales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/coworking-space.jpg') }}" alt="Espacio de Coworking" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light py-5">
+    <div class="container">
+        <h3 class="text-center mb-4">Planes de Membresía</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card pricing-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Plan Diario</h5>
+                        <h3 class="price">$250<span>/día</span></h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Acceso por un día</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Internet de alta velocidad</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Áreas comunes</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Café y agua</li>
+                        </ul>
+                        <a href="/contact" class="btn btn-primary w-100">Contratar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card pricing-card featured">
+                    <div class="card-body">
+                        <h5 class="card-title">Plan Semanal</h5>
+                        <h3 class="price">$1,200<span>/semana</span></h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Acceso por 7 días</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Internet de alta velocidad</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Áreas comunes y privadas</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Café y agua ilimitados</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Descuento en restaurantes</li>
+                        </ul>
+                        <a href="/contact" class="btn btn-primary w-100">Contratar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card pricing-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Plan Mensual</h5>
+                        <h3 class="price">$4,000<span>/mes</span></h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Acceso ilimitado</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Internet de alta velocidad</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Espacio privado garantizado</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Beneficios exclusivos</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Descuentos en todos los servicios</li>
+                        </ul>
+                        <a href="/contact" class="btn btn-primary w-100">Contratar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <h3 class="text-center mb-4">Servicios Adicionales</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Salas de Reuniones</h5>
+                        <p>Espacios privados para reuniones y presentaciones.</p>
+                        <p class="price">Desde $200/hora</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Impresión y Escaneo</h5>
+                        <p>Servicios de impresión y escaneo de documentos.</p>
+                        <p class="price">Desde $5/página</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Eventos Corporativos</h5>
+                        <p>Organización de eventos y talleres empresariales.</p>
+                        <p class="price">Cotización personalizada</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h3>¿Por qué elegir nuestro coworking?</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Ubicación privilegiada en Teotihuacán</li>
+                    <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Ambiente inspirador y cultural</li>
+                    <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Comunidad de profesionales diversos</li>
+                    <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Acceso a eventos culturales exclusivos</li>
+                    <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Descuentos en restaurantes y servicios</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/coworking-benefits.jpg') }}" alt="Beneficios" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    .pricing-card {
+        transition: transform 0.3s ease;
+        margin-bottom: 2rem;
+    }
+    .pricing-card:hover {
+        transform: translateY(-5px);
+    }
+    .pricing-card.featured {
+        border: 2px solid var(--primary-color);
+    }
+    .price {
+        color: var(--primary-color);
+        font-size: 2.5rem;
+        margin: 1rem 0;
+    }
+    .price span {
+        font-size: 1rem;
+        color: var(--text-color);
+    }
+    .feature-item {
+        display: flex;
+        align-items: flex-start;
+    }
+</style>
+{% endblock %} 
