@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio - Plaza Comercial Quetzal{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+    <div class="container">
+        <h1 class="display-4">Bienvenidos a Plaza Comercial Quetzal</h1>
+        <p class="lead">Donde la tradición y la modernidad se encuentran</p>
+        <a href="#servicios" class="btn btn-primary btn-lg">Descubre más</a>
+    </div>
+</section>
+
+<section id="servicios" class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center">Nuestros Servicios</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="{{ url_for('static', filename='images/gastronomia.jpg') }}" class="card-img-top" alt="Gastronomía">
+                    <div class="card-body">
+                        <h5 class="card-title">Gastronomía</h5>
+                        <p class="card-text">Disfruta de la auténtica cocina mexicana en nuestros restaurantes y puestos de comida típica.</p>
+                        <a href="/gastronomia" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="{{ url_for('static', filename='images/artesanias.jpg') }}" class="card-img-top" alt="Artesanías">
+                    <div class="card-body">
+                        <h5 class="card-title">Artesanías</h5>
+                        <p class="card-text">Descubre y adquiere piezas únicas de artesanos locales en nuestro mercado tradicional.</p>
+                        <a href="/artesanias" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="{{ url_for('static', filename='images/coworking.jpg') }}" class="card-img-top" alt="Coworking">
+                    <div class="card-body">
+                        <h5 class="card-title">Coworking</h5>
+                        <p class="card-text">Espacios modernos de trabajo colaborativo con todas las comodidades que necesitas.</p>
+                        <a href="/coworking" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="section-title">Sobre Nosotros</h2>
+                <p>Plaza Comercial Quetzal es un innovador centro comercial y cultural ubicado en Teotihuacán de Arista, México. Nuestro objetivo es celebrar y promover la rica herencia cultural de la región mientras satisfacemos las necesidades contemporáneas de residentes y turistas.</p>
+                <a href="/about" class="btn btn-primary">Conoce más</a>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/about.jpg') }}" alt="Sobre Quetzal" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center">Eventos Culturales</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Talleres Artesanales</h5>
+                        <p class="card-text">Aprende técnicas tradicionales de artesanos locales.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Exposiciones</h5>
+                        <p class="card-text">Descubre el arte y la cultura de la región.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Festivales</h5>
+                        <p class="card-text">Celebra con nosotros las tradiciones locales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 

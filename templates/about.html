@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block title %}Sobre Nosotros - Plaza Comercial Quetzal{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center">Sobre Plaza Comercial Quetzal</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/about-main.jpg') }}" alt="Plaza Quetzal" class="img-fluid rounded mb-4">
+            </div>
+            <div class="col-md-6">
+                <h3>Nuestra Historia</h3>
+                <p>Plaza Comercial Quetzal nace de la visión de crear un espacio único que celebre y promueva la rica herencia cultural de Teotihuacán mientras satisface las necesidades contemporáneas de residentes y turistas.</p>
+                <p>Ubicados en el corazón de Teotihuacán de Arista, nos hemos convertido en un referente de la integración entre tradición y modernidad, ofreciendo experiencias auténticas en un entorno inspirado en la cultura mesoamericana.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light py-5">
+    <div class="container">
+        <h3 class="text-center mb-4">Nuestra Misión y Visión</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">Misión</h4>
+                        <p class="card-text">Ser un espacio que promueva y preserve la cultura local, ofreciendo experiencias auténticas y de calidad para nuestros visitantes, mientras apoyamos el desarrollo económico y social de la comunidad.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">Visión</h4>
+                        <p class="card-text">Convertirnos en el principal destino cultural y comercial de la región, reconocido por nuestra autenticidad, calidad de servicios y compromiso con la preservación del patrimonio cultural.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <h3 class="text-center mb-4">Nuestros Valores</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="text-center mb-4">
+                    <i class="fas fa-hands-helping fa-3x mb-3 text-primary"></i>
+                    <h5>Compromiso Social</h5>
+                    <p>Apoyamos el desarrollo de la comunidad local y la preservación de sus tradiciones.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center mb-4">
+                    <i class="fas fa-leaf fa-3x mb-3 text-primary"></i>
+                    <h5>Sostenibilidad</h5>
+                    <p>Promovemos prácticas responsables con el medio ambiente y la cultura local.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center mb-4">
+                    <i class="fas fa-star fa-3x mb-3 text-primary"></i>
+                    <h5>Calidad</h5>
+                    <p>Ofrecemos servicios y productos de la más alta calidad para nuestros visitantes.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center mb-4">
+                    <i class="fas fa-heart fa-3x mb-3 text-primary"></i>
+                    <h5>Autenticidad</h5>
+                    <p>Mantenemos la esencia de la cultura local en cada aspecto de nuestro negocio.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light py-5">
+    <div class="container">
+        <h3 class="text-center mb-4">Nuestro Equipo</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/team1.jpg') }}" class="card-img-top" alt="Equipo">
+                    <div class="card-body">
+                        <h5 class="card-title">Dirección General</h5>
+                        <p class="card-text">Supervisión integral del proyecto y desarrollo estratégico.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/team2.jpg') }}" class="card-img-top" alt="Equipo">
+                    <div class="card-body">
+                        <h5 class="card-title">Gerencia Comercial</h5>
+                        <p class="card-text">Gestión de rentas y relaciones con locatarios.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/team3.jpg') }}" class="card-img-top" alt="Equipo">
+                    <div class="card-body">
+                        <h5 class="card-title">Gerencia de Cultura</h5>
+                        <p class="card-text">Programación de eventos y actividades culturales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+{% endblock %} 
