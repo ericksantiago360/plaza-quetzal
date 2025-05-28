@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+
+{% block title %}Artesanías - Plaza Comercial Quetzal{% endblock %}
+
+{% block content %}
+<section class="hero-section" style="background-image: url('{{ url_for('static', filename='images/artesanias-hero.jpg') }}');">
+    <div class="container">
+        <h1 class="display-4">Mercado de Artesanías</h1>
+        <p class="lead">Descubre la riqueza artesanal de Teotihuacán</p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="section-title">Nuestro Mercado Artesanal</h2>
+                <p>En Plaza Comercial Quetzal, hemos creado un espacio dedicado a la promoción y preservación de las artesanías tradicionales de la región. Nuestro mercado reúne a los mejores artesanos locales y regionales, ofreciendo piezas únicas y auténticas.</p>
+                <div class="features-list">
+                    <div class="feature-item mb-4">
+                        <i class="fas fa-store fa-2x text-primary me-3"></i>
+                        <div>
+                            <h5>Espacios Comerciales</h5>
+                            <p>25-30 locales para artesanos locales y regionales.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item mb-4">
+                        <i class="fas fa-certificate fa-2x text-primary me-3"></i>
+                        <div>
+                            <h5>Calidad Garantizada</h5>
+                            <p>Curaduría de productos para garantizar autenticidad y calidad.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item mb-4">
+                        <i class="fas fa-recycle fa-2x text-primary me-3"></i>
+                        <div>
+                            <h5>Sostenibilidad</h5>
+                            <p>Énfasis en técnicas tradicionales y materiales sostenibles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/artesanias-space.jpg') }}" alt="Mercado de Artesanías" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light py-5">
+    <div class="container">
+        <h3 class="text-center mb-4">Categorías de Artesanías</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="{{ url_for('static', filename='images/ceramica.jpg') }}" class="card-img-top" alt="Cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Cerámica</h5>
+                        <p class="card-text">Piezas únicas en barro y cerámica con diseños tradicionales.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="{{ url_for('static', filename='images/textiles.jpg') }}" class="card-img-top" alt="Textiles">
+                    <div class="card-body">
+                        <h5 class="card-title">Textiles</h5>
+                        <p class="card-text">Tejidos y bordados tradicionales de la región.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="{{ url_for('static', filename='images/joyeria.jpg') }}" class="card-img-top" alt="Joyería">
+                    <div class="card-body">
+                        <h5 class="card-title">Joyería</h5>
+                        <p class="card-text">Piezas únicas en plata y otros materiales tradicionales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <h3 class="text-center mb-4">Experiencias Artesanales</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card experience-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Talleres Artesanales</h5>
+                        <p>Aprende técnicas tradicionales directamente de los maestros artesanos.</p>
+                        <p class="schedule">Sábados 10:00 AM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card experience-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Demostraciones en Vivo</h5>
+                        <p>Observa el proceso de creación de piezas artesanales en tiempo real.</p>
+                        <p class="schedule">Domingos 12:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card experience-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Exposiciones Especiales</h5>
+                        <p>Descubre colecciones únicas y piezas exclusivas de artesanos invitados.</p>
+                        <p class="schedule">Primer fin de semana de cada mes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h3>Horarios y Visitas</h3>
+                <p>Nuestro mercado de artesanías está abierto todos los días:</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><strong>Lunes a Domingo:</strong> 10:00 AM - 8:00 PM</li>
+                </ul>
+                <p>Ofrecemos visitas guiadas para grupos y escuelas:</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><strong>Visitas Guiadas:</strong> Previa cita</li>
+                    <li class="mb-2"><strong>Grupos Escolares:</strong> Programas especiales</li>
+                </ul>
+                <a href="/contact" class="btn btn-primary">Agendar Visita</a>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/artesanias-visit.jpg') }}" alt="Visitas" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    .category-card {
+        transition: transform 0.3s ease;
+        margin-bottom: 2rem;
+    }
+    .category-card:hover {
+        transform: translateY(-5px);
+    }
+    .experience-card {
+        transition: transform 0.3s ease;
+        margin-bottom: 2rem;
+    }
+    .experience-card:hover {
+        transform: translateY(-5px);
+    }
+    .schedule {
+        color: var(--primary-color);
+        font-weight: bold;
+    }
+    .feature-item {
+        display: flex;
+        align-items: flex-start;
+    }
+</style>
+{% endblock %} 

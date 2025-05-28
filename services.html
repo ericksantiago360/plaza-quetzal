@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+
+{% block title %}Servicios - Plaza Comercial Quetzal{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center">Nuestros Servicios</h2>
+        <p class="text-center mb-5">Descubre todo lo que Plaza Comercial Quetzal tiene para ofrecerte</p>
+
+        <!-- Gastronomía -->
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/gastronomia-detail.jpg') }}" alt="Gastronomía" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h3>Zona Gastronómica</h3>
+                <p>Disfruta de una experiencia culinaria única con nuestra selección de restaurantes y puestos de comida típica mexicana. Nuestra zona gastronómica ofrece:</p>
+                <ul>
+                    <li>12-15 restaurantes y puestos de comida típica</li>
+                    <li>Ingredientes locales y recetas tradicionales</li>
+                    <li>Cocina prehispánica y fusiones contemporáneas</li>
+                    <li>Área central compartida con diseño inspirado en patios mesoamericanos</li>
+                </ul>
+                <a href="/gastronomia" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Artesanías -->
+        <div class="row mb-5">
+            <div class="col-md-6 order-md-2">
+                <img src="{{ url_for('static', filename='images/artesanias-detail.jpg') }}" alt="Artesanías" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h3>Mercado de Artesanías</h3>
+                <p>Explora y adquiere piezas únicas en nuestro mercado de artesanías, donde la tradición y la creatividad se unen:</p>
+                <ul>
+                    <li>25-30 locales para artesanos locales y regionales</li>
+                    <li>Curaduría de productos para garantizar autenticidad y calidad</li>
+                    <li>Énfasis en técnicas tradicionales y materiales sostenibles</li>
+                    <li>Espacios para demostraciones en vivo de técnicas artesanales</li>
+                </ul>
+                <a href="/artesanias" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Coworking -->
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/coworking-detail.jpg') }}" alt="Coworking" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h3>Espacios de Coworking</h3>
+                <p>Nuestros espacios de trabajo colaborativo están diseñados para inspirar y facilitar la productividad:</p>
+                <ul>
+                    <li>50 estaciones de trabajo individuales</li>
+                    <li>5 salas de reuniones de diversos tamaños</li>
+                    <li>Áreas comunes de descanso y networking</li>
+                    <li>Internet de alta velocidad y servicios tecnológicos</li>
+                    <li>Vistas panorámicas al entorno natural y arquitectónico</li>
+                </ul>
+                <a href="/coworking" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Eventos Culturales -->
+        <div class="row">
+            <div class="col-md-6 order-md-2">
+                <img src="{{ url_for('static', filename='images/eventos-detail.jpg') }}" alt="Eventos" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h3>Eventos Culturales</h3>
+                <p>Vive experiencias únicas con nuestra programación cultural regular:</p>
+                <ul>
+                    <li>Talleres artesanales</li>
+                    <li>Exposiciones de arte local</li>
+                    <li>Festivales culturales</li>
+                    <li>Clases de cocina tradicional</li>
+                    <li>Presentaciones musicales y teatrales</li>
+                </ul>
+                <a href="/eventos" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light py-5">
+    <div class="container">
+        <h3 class="text-center mb-4">Horarios de Servicio</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Zona Gastronómica</h5>
+                        <p class="card-text">8:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Mercado de Artesanías</h5>
+                        <p class="card-text">10:00 AM - 8:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Espacios de Coworking</h5>
+                        <p class="card-text">7:00 AM - 11:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Eventos Culturales</h5>
+                        <p class="card-text">Consulta el calendario</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 
